@@ -1,5 +1,6 @@
 {% block stylesheets %}
         <link rel="stylesheet" href="{{ asset('css/comment.css') }}"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 {% endblock %}
 
 {% block body %}
@@ -8,39 +9,28 @@
 <div class="container_review">
     <div class="info_doctor">
         <div class="name_doctor">
-            <h2></h2>
+            <p class="doctor_name"></p>
         </div>
         <div class="img_doctor" id="review_doc_logo">
-            <img src="{{ asset('images/doc3.jpg') }}" alt="logo_doctor" class="logo_doctor">
+            <img src="{{ asset('images/doc2.jpg') }}" alt="logo_doctor" class="logo_doctor">
         </div>
         <div class="text_doctor">
-                <p>as;jdas;fjalkfhsfljasfhshfkhafkjsdhfkdshfkashlfksdf
-                as;jdas;fjalkfhsfljasfhshfkhafkjsdhfkdshfkashlfksdf
-                as;jdas;fjalkfhsfljasfhshfkhafkjsdhfkdshfkashlfksdf
-                as;jdas;fjalkfhsfljasfhshfkhafkjsdhfkdshfkashlfksdf</p>
+                <p class = "doctor_text" >Healthcare Medical Center Prize - 2010 year<br/><br/>
+                    William Allan Award - 2012 year<br/><br/>
+                    AMA Scientific Achievement Award - 2008 year<br/><br/>
+                    APUA Leadership Award - 2017 year</p>
         </div>
     </div>
     <div class="reviews_block">
-        <div class='desc_doctor'>
-            <h1>Awards of doctor</h1>
-            <div class='awards_of_doctor'>
-                <ul>
-                    <li>Albany Medical Center Prize - 2010 year</li>
-                    <li>William Allan Award - 2012 year</li>
-                    <li>AMA Scientific Achievement Award - 2008 year</li>
-                    <li>APUA Leadership Award - 2017 year</li>
-                </ul>
-            </div>
-        </div>
         <div class="comments_block">
-            <h1>Reviews about this doctor</h1>
+            <h1 class="comment_block">Reviews about this doctor</h1>
             {% for comment in comments %}
                 <div class='wrapper_comment'>
                     <div class="comment_text">
                         {{ comment.text }}
                     </div>
                     <div class="comment_by_name">
-                        {# Commented by {{ comment.createdBy.username }}  #}
+                        Comment was created 
                     </div>
                     <div class="comment_date">
                         At {{ comment.createdAt|date('Y-m-d H:i:s') }}

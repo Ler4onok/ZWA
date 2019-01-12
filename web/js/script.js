@@ -1,5 +1,25 @@
 // here will be write JavaScript code master of Front-End Development Akhmed Ibragimov
 
+var img = require('./01.jpg');
+// console.log(img)
+const dark_theme = {
+    section_1: {
+        header: {
+            back_color: '#000',
+            li_color: 'white'
+        }
+    },
+    section_2: {
+        title_color: '#333',
+        back_color: '#000',
+        paragrapth_color: 'white'
+    }
+}
+
+function changeTheme(){
+
+}
+
 function smoothScrollTo(anchor, link) {
     const _anchor = document.getElementById(anchor);
     const _link = document.getElementById(link);

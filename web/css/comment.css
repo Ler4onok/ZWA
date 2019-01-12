@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300');
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     letter-spacing: 0.5px;
-    font-family: 'Arimo', sans-serif;
-    line-height: 1.2;
+    font-family: 'Roboto', sans-serif;  
 }
 
 button {
@@ -30,16 +31,32 @@ a {
 }
 
 .info_doctor{
-    width: 35%;
-    height: 100%;
+    width: 40%;
+    height: 95%;
     display: flex;
     flex-direction: column;
-    min-height: 97.5vh;
+    min-height: 96.5vh;
     align-items: center;
     margin: 10px 0 10px 10px;
     background: #f6f7f8;
     border-radius: 3px;
 }
+
+.doctor_text{
+    font-family: roboto, sans-serif;
+    margin-top: 25px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.doctor_name{
+    font-family: roboto, sans-serif;
+    color: #555;
+    font-weight: 300;
+    font-size: 38px;
+}
+
 
 .info_doctor .img_doctor {
     width: 90%;
@@ -90,8 +107,8 @@ a {
 
 .comments_block{
     width: 100%;
-    min-height: 450px;
-    margin-top: 50px;
+    min-height: 94vh;
+    margin-top: 0px;
     background: #fff;
     border-radius: 4px;
     padding: 10px 0;
@@ -128,7 +145,7 @@ a {
 .wrapper_comment .comment_text {
     position: absolute;
     left: 3%;
-    font-size: 38px;
+    font-size: 30px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -161,6 +178,11 @@ a {
     position: relative;
 }
 
+.comment_block{
+    font-size: 42px;
+    color: #555;
+}
+
 .post_comment {
     width: 100%;
     height: auto;
@@ -171,16 +193,18 @@ a {
 
 div#comment .form-group input {
     height: 50px;
-    min-width: 75%;
+    min-width: 83%;
     width: auto;
     position: absolute;
     bottom: 10%;
     left: 3%;
     font-size: 30px;
     padding-left: 10px;
+    border-radius: 5px;
 }
 
 div#comment .form-group button {
+    font-family: roboto;
     right: 2%;
     position: absolute;
     height: 50px;
@@ -189,6 +213,7 @@ div#comment .form-group button {
     bottom: 10%;
     background: rgb(0, 123, 255);
     color: white;
+    border-radius: 5px;
 }
 
 div#comment .form-group label{
