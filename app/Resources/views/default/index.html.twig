@@ -1,0 +1,121 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<section class="main_page">
+    {% include 'navbar.html.twig' %}
+    <div class="main_text">
+        <p class="medical_center_text">Medical center</p>
+        <p class="healthcare_text">"Healthcare"</p>
+    </div>
+</section>
+<section class="doctor_page" id="smooth_link_1">
+    <h1 class='title_section'>Our doctors</h1>
+    <div class="wrapper_doctors">
+        <div class="list_doctors">
+            <img src='{{ asset('images/doc1.jpg') }}' alt='doctors'/>
+            <div class="desc-doctors">
+                <h2>Pavel Wenzel</h2>
+                <p>Kardiolog</p>
+                <a href="{{ path("doctor_index", { forDoctor: 1 }) }}"><label>Reviews</label></a>
+            </div>
+        </div>
+        <div class="list_doctors">
+            <img src='{{ asset('images/doc2.jpg') }}' alt='doctors'/>
+            <div class="desc-doctors">
+                <h2>Lucie Veselá</h2>
+                <p>Neurolog</p>
+                <a href="{{ path("doctor_index", { forDoctor: 2 }) }}"><label>Reviews</label></a>
+            </div>
+        </div>
+        <div class="list_doctors">
+            <img src='{{ asset('images/doc3.jpg') }}' alt='doctors'/>
+            <div class="desc-doctors">
+                <h2>Josef Keutizner</h2>
+                <p>Gastroenterolog</p>
+                <a href="{{ path("doctor_index", { forDoctor: 3 }) }}"><label>Reviews</label></a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pricelist_page" id="smooth_link_2">
+    <h1 class='title_section'>Pricelist</h1>
+    <div class="accord_price">
+        <div class="tabs">
+            <input id="tab-one" type="radio" name="tab">
+            <label for="tab-one">Investigations</label>
+            <div class="tab-content">
+                <p> Primary complete investigation with internal medicine doctor <b>from 1000 Kč</b><br/><br/>
+
+                    Super-conciliar investigation with internal medicine doctor (usually after the investigation with the other medical doctor) <b>from 1000 Kč</b><br/><br/>
+
+                    Pre-operational investigation with internal medicine doctor including the ECG registration and description <b>from 1200 Kč</b><br/><br/>
+
+                    Repeated (control) investigation with internal medicine doctor <b>from 500 Kč</b><br/><br/>
+
+                    ECG registration and description <b>from 250 Kč</b></p>
+            </div>
+        </div>
+        <div class="tabs">
+            <input id="tab-two" type="radio" name="tab">
+            <label for="tab-two">Ultrasonicinvestigations</label>
+            <div class="tab-content">
+                <p>Ultrasonic investigation of abdominal organs <b>1000 Kč</b><br/><br/>
+
+                    Ultrasonic investigation of thyroid gland <b>700 Kč</b><br/><br/>
+
+                    Ultrasonic investigation of carotid arteries <b>700 Kč</b><br/><br/>
+
+                    Ultrasonic investigation of lower extremities vessels <b>1000 Kč</b></p>
+            </div>
+        </div>
+        <div class="tabs">
+            <input id="tab-three" type="radio" name="tab">
+            <label for="tab-three">Furtherservices</label>
+            <div class="tab-content">
+                <p>Vaccination (plus the cost of the vaccine itself) <b>500 Kč</b><br/><br/>
+
+                    Medical documentation expertize, translations, issuing <b>from 500 Kč</b><br/><br/>
+
+                    Remedies prescription (including brief patient acknowledgement with indications, counter-indications, side effects and risks of the remedy application) <b>250 Kč</b><br/><br/>
+
+                    Confirmations about the health condition (for institutions, employment, food and beverages industry, etc.) <b>from 500 Kč</b>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="contacts_page" id="smooth_link_3">
+    <h1 class='title_section'>Contact us</h1>
+    <div class='wrapper_contacts'>
+        <div class='google_map' id="map">
+        </div>
+        <div class='contact_data'>
+            <ul>
+                <li>
+                    Working hours: </br>
+                    <span>9:00-18:00</span> 
+                </li>
+                <li>
+                    Parterova 92/3, </br>
+                    Praha 6
+                </li>
+                <li>
+                    +427 111 222 333
+                </li>
+                <li>
+                    healthcare@healthcare.com
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+{% endblock %}
+
+{% block javascripts %}
+    <script src="../js/script.js"></script> 
+    <script src="../js/map.js"></script> 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCs5fX2XhoyUIPFNDmtyOul5Wg12CMoNaU"></script>
+{% endblock %}

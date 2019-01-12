@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+    font-family: 'Arimo', sans-serif;
+    line-height: 1.2;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container_review{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #e9eaed;
+}
+
+.info_doctor{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 97.5vh;
+    align-items: center;
+    margin: 10px 0 10px 10px;
+    background: #f6f7f8;
+    border-radius: 3px;
+}
+
+.info_doctor .img_doctor {
+    width: 90%;
+}
+
+.img_doctor img{
+    width: 100%;
+}
+
+.reviews_block{
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: 10px;
+}
+
+.desc_doctor{
+    width: 100%;
+    min-height: 300px;
+    background: #ffffff;
+    border-radius: 4px;
+    /* display: block; */
+    position: relative;
+}
+
+.desc_doctor h1{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.awards_of_doctor{
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid gray;
+}
+
+.awards_of_doctor ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    line-height: 1.8em;
+    margin: 10px 20px;
+}
+
+.comments_block{
+    width: 100%;
+    min-height: 450px;
+    margin-top: 50px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 10px 0;
+}
+
+.wrapper_comment {
+    display: flex;
+    width: auto;
+    position: relative;
+    align-items: center;
+    height: auto;
+    min-height: 70px;
+    margin-bottom: 10px;
+    box-shadow: 
+        0px 11px 8px -10px #CCC,
+        0px -11px 8px -10px #CCC;   
+
+}
+
+.comment_by_name {
+    position: absolute;
+    right: 15px;
+    bottom: 30px;
+    font-weight: bold;
+}
+
+.comment_date {
+    position: absolute;
+    right: 15px;
+    bottom: 6px;
+    font-weight: bold;
+}
+
+.wrapper_comment .comment_text {
+    position: absolute;
+    left: 3%;
+    font-size: 38px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.need_auth {
+    font-size: 30px;
+    color: red;
+    margin: 30px 0px;
+    width: 100%;
+    min-height: 40px;
+    height: auto;
+    position: relative;
+}
+
+.need_auth span {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+}
+
+.need_auth a {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+}
+
+.comments_block h1{
+    font-weight: 100;
+    text-align: center;
+    position: relative;
+}
+
+.post_comment {
+    width: 100%;
+    height: auto;
+    min-height: 70px;
+    margin: 15px 0;
+    position: relative;
+}
+
+div#comment .form-group input {
+    height: 50px;
+    min-width: 75%;
+    width: auto;
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+div#comment .form-group button {
+    right: 2%;
+    position: absolute;
+    height: 50px;
+    font-size: 20px;
+    width: 10%;
+    bottom: 10%;
+    background: rgb(0, 123, 255);
+    color: white;
+}
+
+div#comment .form-group label{
+    display: none;
+}

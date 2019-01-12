@@ -1,0 +1,28 @@
+{% block body %}
+    <header id="header">
+        <ul class="header_list">
+            <li class="header_items">
+                <a href="#our_doctors" id="anchor_1">Our doctors</a>
+            </li>
+            <li class="header_items">
+                <a href="#pricelist" id="anchor_2">Pricelist</a>
+            </li>
+            <li class="header_items">
+                <a href="#contacts" id="anchor_3">Contacts</a>
+            </li>
+            {% if not is_granted('IS_AUTHENTICATED_FULLY') %}
+                <li class="header_items">
+                    <a href="/login" >LogIn</a>
+                </li>
+            {% else %}
+                <li class="header_items">
+                    <a href="{{ logout_path() }}">Logout</a>
+                </li>
+                <li class="header_items username_app">
+                    <a class="auth_username">Hello, {{ app.user.username }}</a>
+                </li>
+            {% endif %}
+            </li>
+        </ul>
+    </header>
+{% endblock %}

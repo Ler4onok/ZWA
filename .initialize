@@ -1,0 +1,7 @@
+rm -rf var/cache/*
+rm -rf var/logs/*
+
+HTTPDUSER=$(ps axo user,comm | grep -E '[a]pache|[h]ttpd|[_]www|[w]ww-data|[n]ginx' | grep -v root | head -1 | cut -d\  -f1)
+
+chmod 0777 ./var
+chmod 0777 ./var

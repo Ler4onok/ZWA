@@ -1,0 +1,19 @@
+
+version: '3'
+services:
+    web:
+        image: quentincaffeino/php-apache-dev:7.1
+        working_dir: /var/www/html
+        ports:
+            - '80:80'
+        volumes:
+            - '.:/var/www/html'
+        environment:
+            - WEB_DOCUMENT_ROOT=/var/www/html/web/
+        networks:
+            - env_default
+
+
+networks:
+    env_default:
+        external: true
