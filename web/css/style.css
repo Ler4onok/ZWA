@@ -667,6 +667,9 @@ p.healthcare_text {
     position: relative;
     cursor: pointer;
     padding: 0;
+    color: #555;
+    font-family: roboto, sans-serif;
+    font-weight: 300;
 }
 
 .styled-checkbox + label:before {
@@ -677,11 +680,11 @@ p.healthcare_text {
     width: 20px;
     height: 20px;
     background: white;
-    border: 1px solid #f35429;
+    border: 1px solid #3498db;
 }
 
 .styled-checkbox:hover + label:before {
-    background: #f35429;
+    background: #3498db;
 }
 
 .styled-checkbox:focus + label:before {
@@ -689,7 +692,7 @@ p.healthcare_text {
 }
 
 .styled-checkbox:checked + label:before {
-    background: #f35429;
+    background: #3498db ;
 }
 
 .styled-checkbox:disabled + label {
@@ -724,4 +727,9 @@ p.healthcare_text {
     position: absolute;
     right: 3%;
     bottom: 7%
+}
+
+.error_field{
+    position: absolute;
+    color: red;
 }

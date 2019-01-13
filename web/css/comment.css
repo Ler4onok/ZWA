@@ -55,6 +55,7 @@ a {
     color: #555;
     font-weight: 300;
     font-size: 38px;
+    margin-bottom: 0;
 }
 
 
@@ -158,6 +159,8 @@ a {
     min-height: 40px;
     height: auto;
     position: relative;
+    font-family: roboto, sans-serif;
+    font-weight: 300;
 }
 
 .need_auth span {
@@ -218,4 +221,13 @@ div#comment .form-group button {
 
 div#comment .form-group label{
     display: none;
+}
+
+p.doctor_prof {
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 22px;
+    font-family: roboto, sans-serif;
+    font-weight: 100;
+    font-size: 24px;
 }

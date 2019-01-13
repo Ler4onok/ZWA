@@ -1,5 +1,3 @@
-// here will be write JavaScript code master of Front-End Development Akhmed Ibragimov
-
 function changeTheme(title_color='rgb(195, 195, 195)', back_color='rgb(43, 42, 42)') {
     let str_back = 'linear-gradient(rgba(0, 0, 0, 1.6), rgba(0, 0, 0, 0.6)), url(../images/main_pic.jpg) no-repeat'
     document.querySelector('.main_page').style.background = str_back;
