@@ -1,7 +1,8 @@
 window.onload = function(){
 
     const input_forms = [...document.querySelectorAll('.form-group input')];
-    const btn_register = document.querySelector('.btn-register')
+		const btn_register = document.querySelector('.btn-register')
+		
 
     handleSubmitRegister = () => {
 		btn_register.addEventListener('click', e => {
@@ -9,7 +10,12 @@ window.onload = function(){
 				let length = input.value.length;
 				if(length < 6){
 					e.preventDefault();
+					var text = document.createElement('p');
+					text.innerText = "Hello";
+
 					input.classList.add('danger_input');
+					
+					
 				}
 			})
 		});
